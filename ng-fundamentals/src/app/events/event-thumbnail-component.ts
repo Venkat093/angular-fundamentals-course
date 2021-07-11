@@ -24,6 +24,7 @@ import { iEvent } from "./shared/event-model";
     
    </div>`,
    styles:[`
+   span{}
    .green {color:#003300 !important;}
    .bold {font-weight:bold}
    .thumbnail {min-height:210px}
