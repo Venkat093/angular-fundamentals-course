@@ -1,0 +1,25 @@
+<div>
+    <h1>Upcoming Angular vents</h1>
+    
+    <button type="submit" (click)="create()" class="btn btn-primary">create Session</button>
+    <hr>
+   <!--  <div class="well hoverwell thumbnail">
+       <h2> Name :{{event.name}}</h2>
+       <div>Date :{{event.date}} </div>
+       <div>Time :{{event.time}} </div>
+       <div> ${{event.price}}</div>
+       
+       <div><Span>Location :{{event.location.address}}</Span>
+       <span>&nbsp;</span>
+       <Span>Location :{{event.location.city}}  ,{{event.location.country}}</Span>
+       </div>
+    </div> -->
+
+    <div class="row">
+        <div *ngFor="let event of events " class="col-md-5">
+            <event-thumbnail  [event]="event"></event-thumbnail>
+        </div>
+    </div>
+    
+
+</div>
