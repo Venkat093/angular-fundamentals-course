@@ -11,8 +11,8 @@ import { Component, Input, OnInit } from '@angular/core';
                     <h4 class="model-title">{{title}}</h4>
                 </div>
                 <div class="model.body">
-                    <<ng-content ></ng-content>
-                    <ng-content></ng-content>
+                    <ng-content ></ng-content>
+                    
                 </div>
             </div>
         </div>
