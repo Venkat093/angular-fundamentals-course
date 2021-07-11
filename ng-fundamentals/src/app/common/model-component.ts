@@ -12,6 +12,7 @@ import { Component, Input, OnInit } from '@angular/core';
                 </div>
                 <div class="model.body">
                     <<ng-content ></ng-content>
+                    <ng-content></ng-content>
                 </div>
             </div>
         </div>
