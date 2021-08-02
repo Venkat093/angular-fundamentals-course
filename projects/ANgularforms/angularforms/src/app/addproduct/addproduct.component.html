@@ -1,0 +1,82 @@
+<p>addproduct works!</p>
+<div class="addpimg1">
+    <section  class="container-fluid">
+    <section class="row justify-content-center">
+    <section class="col-md-8 offset-md-3">
+    
+      <form     (ngSubmit)="submit()"  class="form-container1">
+        <h1>Add product</h1>
+        <div class="user-details  ">
+        <div class="form-group">
+        <label >  Product  CODE </label> 
+        <input  #namefield="ngModel" type="text" class="form-control" id="productCODE" name="id"  placeholder="Enter productcode"  [(ngModel)]="product.id" required/>
+        </div>
+        <div [hidden]="namefield.valid || namefield.untouched" class="alert alert-danger">
+          enter product code
+
+        </div>
+
+
+        <div class="form-group">
+        <label >  Brand </label> 
+        <input type="text" class="form-control" id="productbrand" name="brand" placeholder="Enter productbrand"[(ngModel)]="product.brand" required/>
+        </div>
+
+
+    <div class="form-group">
+    <label >  image </label> 
+    <input type="text" class="form-control" id="productimg" name="image"  placeholder="Enter productimg"[(ngModel)]="product.img" required/>
+    </div>
+
+        <div class="form-group">
+        <label > Name </label> 
+        <input type="text" class="form-control" id="productname" name="name" placeholder="Enter productname"[(ngModel)]="product.productname" required/>
+        </div>
+
+
+        <div class="form-group">
+        <label >  Product  CODE </label> 
+        <input type="text" class="form-control" name="listprice" id="productlistprice"  placeholder="Enter productlistprice"[(ngModel)]="product.listprice" required/>
+        </div>
+
+        <div class="form-group">
+        <label >  Ram </label> 
+        <input type="text" class="form-control" name="ram" id="productram"  placeholder="Enter productram"[(ngModel)]="product.ram" required/>
+        </div>
+
+        <div class="form-group">
+        <label > Rom </label> 
+        <input type="text" class="form-control" name="rom" id="productrom"  placeholder="Enter productrom"[(ngModel)]="product.rom" required/>
+        </div>
+
+        <div class="form-group">
+        <label >  weight </label> 
+        <input type="text" class="form-control" name="weight" id="productweight"  placeholder="Enter productweight"[(ngModel)]="product.weight" required/>
+        </div>
+
+        <div class="form-group">
+        <label >  publisher </label> 
+        <input type="text" class="form-control" name="publisher" id="productpublisher"  placeholder="Enter productpublisher"[(ngModel)]="product.publisher" required/>
+        </div>
+
+        <div class="form-group">
+        <label >  discription </label> 
+        <input type="text" class="form-control" name="discription" id="productdiscription"  placeholder="Enter productdiscription"[(ngModel)]="product.discription" required/>
+        </div>
+          
+
+        </div>
+     <!--    <div class="form-group">
+<label htmlfor="Rom">  Discription </label>
+<text type="text" class="form-control" id="discription"  placeholder="Discription"
+value={this.state.discription} onChange={this.changediscriptionhandler}/>
+</div> -->
+<button  id="btn" class=" btn btn-primary" onClick={this.Save}>addproduct</button>
+
+     </form> 
+     
+
+</section>
+</section>
+</section>
+</div>

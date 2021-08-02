@@ -1,0 +1,21 @@
+<p>view-products works!</p>
+<button (click)="addproduct()">Addproduct</button>
+<div class="body">
+  <div  class="main_content col-md 8"  > 
+    <div *ngFor="let product of products" >  
+           <div class="card" >
+                     <div class="card_img">
+                          <img [routerLink]="['/productbyid',product.id]"  src={{product.img}} alt="asdfghjkl" />
+                     </div>
+               <div class="card_header" >
+                  <h2>{{product.productname}}</h2>
+                  <p class="price" >{{product.listprice}}<span>₹</span></p>
+                  <p class="brand">{{product.brand}}</p>
+                  
+                  <div class="btn " > Add to cart</div>
+                 
+                </div>   
+    
+             </div> 
+            </div>
+</div>

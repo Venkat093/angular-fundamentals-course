@@ -1,0 +1,28 @@
+<div class="container mt-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">bookID</th>
+        <th scope="col">titke</th>
+        <th scope="col">author</th>
+        <th scope="col">publicationYear</th>
+        <th scope="col">edit</th>
+        <th scope="col">delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  scope="row" *ngFor='let book of allbooks'>
+        <th  >{{book.bookID}}</th>
+        <th>{{book.title}}</th>
+        <th>{{book.author}}</th>
+        <th>{{book.publicationYear}}</th>
+        <th><button type="button"  (click)="editbook(book.bookID)" class="btn btn-primary"> edit</button></th>
+        <th><button type="button" class="btn btn-danger"> delete</button></th>
+        <!-- [routerLink]="['/book',book.bookID]" -->
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <h1>Mostpopularbook:{{mostpopularbook.title}}</h1>
+  </div>
+</div>

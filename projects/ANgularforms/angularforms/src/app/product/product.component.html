@@ -1,0 +1,23 @@
+<p>product works!</p>
+<div class="app">
+<div class="details">
+    <div class="big-img">
+
+        <img  [src]="product?.img" [alt]="product?.img" />
+    </div>
+    <div class="box">
+        <div class="row">
+            <h2 class="">{{product?.productname}}</h2>
+            <span>{{product?.listprice}}</span>
+         </div>
+         <div class="specification">
+             <ul claas="no-bullets">
+                 <li>Brand: {{product?.brand}}<br></li>
+                 <li>Ram:{{product?.ram}}<br></li>
+               
+
+             </ul>
+         </div>
+    </div>
+</div>
+</div>

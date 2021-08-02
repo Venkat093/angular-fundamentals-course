@@ -1,0 +1,23 @@
+<p>editbook works!</p>
+
+<div class="container">
+    <form class="form" #bookform="ngForm"(ngSubmit)="onSubmit(bookform.value)" autocomplete="off">
+        <div class="formgroup">
+            <label for="title">title:</label>
+            <input type="text" name="title" id="title"[(ngModel)]="book.title">
+        </div>
+        <div class="formgroup">
+            <label for="author">author:</label>
+            <input type="text" name="author" id="author"[(ngModel)]="book.author">
+        </div>
+        <div class="formgroup">
+            <label for="publicationYear">publicationYear:</label>
+            <input type="text" name="publicationYear" id="publicationYear"[(ngModel)]="book.publicationYear">
+        </div>
+        
+    <button type="submit"  class="btn btn-primary">Save</button>
+    
+    <button type="submit"(click)="setmostpopular()"  class="btn btn-primary">setMostpopularbook</button>
+    </form>
+
+</div>
